@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  wordpress:
+    image: wordpress:latest
+    container_name: checkit_wordpress
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/html
+    restart: always
